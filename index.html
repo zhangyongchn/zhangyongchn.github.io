@@ -14,13 +14,16 @@
 
 <script>
 	var a = window.prompt("请确认访问权限：")
-	if(a=="liyuanyuan")
+	if(a=="liyuanyuan"){
+		alert("欢迎您，李圆圆同学！");
 		top.location='test/happytest.html';
-	else if(a!="a2020")
-		alert("非法用户")
+	}
+	else if(a=="a2020"){
+		alert("普通用户");
+		top.location='happytime.html';
+	}
 	else{
-		 alert("点击跳转页面");
-	   top.location='happytime.html';
+		 alert("非法用户");
 	 }
 </script>
 
